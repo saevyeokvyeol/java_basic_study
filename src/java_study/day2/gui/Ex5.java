@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Ex5 extends JFrame {
+public class Ex5 extends JFrame implements ActionListener {
 	JLabel id_la, password_la;
 	JTextField id_tf, password_tf;
 	JButton login, join;
@@ -61,7 +61,7 @@ public class Ex5 extends JFrame {
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		System.out.println("È®ÀÎ: " + id_tf.getText());
+		System.out.println("È®ï¿½ï¿½: " + id_tf.getText());
 		id_tf.setText("");
 		ex6.setVisible(true);
 		this.setVisible(false);
